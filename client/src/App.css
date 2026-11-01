@@ -1,0 +1,166 @@
+body {
+  background: #f6f8fa;
+}
+
+.app {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 16px;
+  font-family: system-ui, sans-serif;
+  color: #222;
+}
+
+.add-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.add-form input[type="text"] {
+  flex: 1;
+}
+
+.add-form input,
+.add-form select,
+.add-form button {
+  padding: 10px;
+  border: 1px solid #ccd3da;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.add-form button {
+  background: #2b6777;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.table-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background: #f1f4f7;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+th,
+td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #eceff2;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 16px;
+  border-radius: 999px;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.badge-high {
+  background: #c9504c;
+}
+
+.badge-medium {
+  background: #e3b84a;
+}
+
+.badge-low {
+  background: #4f9d7f;
+}
+
+.done {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.overdue {
+  color: #c9504c;
+  font-weight: 600;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #b06b69;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.empty {
+  padding: 20px;
+  text-align: center;
+  color: #888;
+}
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+  font-family: system-ui, sans-serif;
+}
+
+.sidebar {
+  width: 220px;
+  padding: 24px 12px;
+  background: white;
+  border-right: 1px solid #e3e7eb;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sidebar-label {
+  margin: 0 0 8px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #888;
+  text-transform: uppercase;
+}
+
+.sidebar-item {
+  text-align: left;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 999px;
+  background: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.sidebar-item:hover {
+  background: #f1f4f7;
+}
+
+.sidebar-item.active {
+  background: #d6e6ee;
+  font-weight: 600;
+}
+
+.new-project-btn {
+  margin-top: 16px;
+  padding: 10px;
+  border: 1px solid #ccd3da;
+  border-radius: 999px;
+  background: white;
+  cursor: pointer;
+}
+
+.layout .app {
+  flex: 1;
+  margin: 0;
+  padding: 40px 32px;
+  max-width: none;
+}
