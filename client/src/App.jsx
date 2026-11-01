@@ -2,8 +2,9 @@ import { enableNotifications } from "./firebase";
 import { useState, useEffect } from "react";
 import "./App.css";
 
-const TASKS_URL = "http://localhost:5000/api/tasks";
-const PROJECTS_URL = "http://localhost:5000/api/projects";
+const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:5000";
+const TASKS_URL = `${API_BASE}/api/tasks`;
+const PROJECTS_URL = `${API_BASE}/api/projects`;
 
 function formatDate(dateString) {
   if (!dateString) return "No deadline";
@@ -105,7 +106,7 @@ function App() {
       return;
     }
 
-    await fetch("http://localhost:5000/api/tokens", {
+    await fetch(`${API_BASE}/api/tokens`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ token }),
